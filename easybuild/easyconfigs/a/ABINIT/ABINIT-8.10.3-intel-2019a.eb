@@ -9,7 +9,7 @@ description = """ABINIT is a package whose main program allows one to find the t
  and periodic solids) within Density Functional  Theory (DFT), using pseudopotentials and a
  planewave or wavelet basis."""
 
-toolchain = {'name': 'intel', 'version': '2018b'}
+toolchain = {'name': 'intel', 'version': '2019a'}
 toolchainopts = {'usempi': True, 'pic': True}
 
 source_urls = ['https://www.abinit.org/sites/default/files/packages/']
@@ -17,14 +17,14 @@ sources = [SOURCELOWER_TAR_GZ]
 checksums = ['ed626424b4472b93256622fbb9c7645fa3ffb693d4b444b07d488771ea7eaa75']
 
 ##
-# AtomPAW-4.1.0.5-intel-2018b.eb is lastest version to be used with ABINIT 8.10.x
+# AtomPAW-4.1.0.5-foss-2019a.eb is lastest version to be used with ABINIT 8.10.x
 ##
 dependencies = [
     ('libpsml', '1.1.7'),
-    ('libxc', '4.2.3'),
-    ('netCDF', '4.6.1'),
-    ('netCDF-Fortran', '4.4.4'),
-    ('HDF5', '1.10.2'),
+    ('libxc', '4.3.4'),
+    ('netCDF', '4.6.2'),
+    ('netCDF-Fortran', '4.4.5'),
+    ('HDF5', '1.10.5'),
     ('Wannier90', '2.0.1.1', '-abinit'),
     ('AtomPAW', '4.1.0.5'),
 ]
