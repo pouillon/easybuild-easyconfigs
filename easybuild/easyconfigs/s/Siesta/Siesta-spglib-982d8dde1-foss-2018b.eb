@@ -1,0 +1,23 @@
+name = 'Siesta'
+version = 'spglib-982d8dde1'
+
+homepage = 'http://siesta-project.org/'
+description = """SIESTA is both a method and its computer program implementation, to perform efficient electronic
+ structure calculations and ab initio molecular dynamics simulations of molecules and solids."""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+toolchainopts = {'usempi': True}
+
+source_urls = ['https://poupouille.org/downloads/']
+sources = [SOURCELOWER_TAR_GZ]
+checksums = ['86c33a0bf42e78cb04a2c77ae2b8b8fb6c91212daf607b1899a22392bf31037d']
+
+dependencies = [
+    ('libgridxc', '0.8.5.1'),
+    ('libpsml', '1.1.7'),
+    ('netCDF-Fortran', '4.4.4'),
+]
+
+runtest = 'check'
+
+moduleclass = 'phys'
